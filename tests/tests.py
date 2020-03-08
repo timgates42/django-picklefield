@@ -93,7 +93,7 @@ class PickledObjectFieldTests(TestCase):
         "((dp1\nI1\nI1\nsI2\nI4\nsI3\nI6\nsI4\nI8\nsI5\nI10\nsS'Hello World'\np2\n(I1\nI2\nI3\nI4\nI5\ntp3\n(lp4\nI1\naI2\naI3\naI4\naI5\nat."
         >>> dumps(deepcopy(t))
         "((dp1\nI1\nI1\nsI2\nI4\nsI3\nI6\nsI4\nI8\nsI5\nI10\nsS'Hello World'\np2\n(I1\nI2\nI3\nI4\nI5\ntp3\n(lp4\nI1\naI2\naI3\naI4\naI5\nat."
-        >>> # Using deepcopy() beforehand means that now both dumps() are idential.
+        >>> # Using deepcopy() beforehand means that now both dumps() are identical.
         >>> # It may not be necessary, but deepcopy() ensures that lookups will always work.
 
         Unfortunately calling copy() alone doesn't seem to fix the
